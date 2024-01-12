@@ -64,21 +64,21 @@ def check_errors(file_name, expected: List[str], actual: List[Any]) -> bool:
 notebooks: Dict[str, List[str]] = {
     # This is the list of pages to try and rum along with each pages expected errors.
 
-    "1_intro_to_scala.ipynb": [],
-    "2.1_first_module.ipynb": ["chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation"],
-    "2.2_comb_logic.ipynb": ['Compilation Failed'] +
+    "0_intro_to_scala.ipynb": [],
+    "1_intro_to_chisel.ipynb": ["chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation"],
+    "2_comb_logic.ipynb": ['Compilation Failed'] +
                             ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] +
                             ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] +
                             ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'],
-    "2.3_control_flow.ipynb": ['scala.NotImplementedError'] * 2 +
+    "3_control_flow.ipynb": ['scala.NotImplementedError'] * 2 +
                               ['Compilation Failed'] +
                               ['scala.NotImplementedError'] +
                               ['Compilation Failed'],
-    "2.4_sequential_logic.ipynb": ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] * 2,
+    "4_sequential_logic.ipynb": ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] * 2,
     "2.5_exercise.ipynb": ['chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'] * 3 +
                           ['Compilation Failed'],
     "2.6_chiseltest.ipynb": [],
-    "3.1_parameters.ipynb": ['java.util.NoSuchElementException'],
+    "5_parameters.ipynb": ['java.util.NoSuchElementException'],
     "3.2_collections.ipynb": [
         'chisel3.internal.ChiselException: Exception thrown when elaborating ChiselGeneratorAnnotation'],
     "3.2_interlude.ipynb": [],
@@ -91,7 +91,7 @@ notebooks: Dict[str, List[str]] = {
                                         ['scala.NotImplementedError'] +
                                         ['Compilation Failed'],
     "3.5_object_oriented_programming.ipynb": ['Compilation Failed'],
-    "3.6_types.ipynb": ['chisel3.internal.ChiselException: Connection between sink'] +
+    "6_types.ipynb": ['chisel3.internal.ChiselException: Connection between sink'] +
                        ['Failed to elaborate Chisel circuit'] +
                        ['expected ")"'] +
                        ['scala.MatchError: ChiselExecutionFailure'] +
